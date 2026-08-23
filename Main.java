@@ -27,7 +27,6 @@ public class Main
         {
 
             final int threadId = i;
-
             threads[i] = new Thread(() -> {
 
                 for (int j = 1; j <= incrementsPerThread; j++) {
