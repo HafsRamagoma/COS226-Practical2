@@ -36,6 +36,13 @@ public class FilterLock implements Lock
             //And current thread is still victim
 
             //work out while condition
+             for(int j = 0; j < n; j++){
+                while(j != i && level[j].value >= Level && victim[Level].value == i){
+                    // wait until:
+                    // 1. No other thread is at a higher or equal level, OR
+                    // 2. Current thread is not the victim for this level
+                }
+            }
 
         }
     }
